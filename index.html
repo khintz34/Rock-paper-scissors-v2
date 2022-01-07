@@ -3,11 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/404edfa668.js" crossorigin="anonymous"></script>
 </head>
 <body>
+   
+    
+    <div id='container'>
+        <div id='topDiv'>
+            <div id='header'>
+                <h1>Welcome to <span style='color:red'>Rock,</span> 
+                    <span style='color: white'>Paper, </span>
+                    <span style='color: blue'>Scissors!</span></h1>
+            </div>
+            <button id='restartBtn'>Restart Game</button>
+            <div id='scoreBoardDiv'>
+                <div id='rounds'> 
+                    <h4 id='roundsPlayed'>Rounds Played: 0</h4>
+                </div>
+                <div id='scoresDiv'>
+                    <p id='playerScore'>Player Score: 0</p>
+                    <p id='computerScore'>Computer Score: 0</p>
+                </div>
+            </div>
+        </div>
+
+        <div id='mainArea'>
+            <div id=leftSideMain>
+                <h3 id='makeYourChoice'>Make Your Choice!</h3>
+                <div class='playerChoice'> 
+                    <i id="rock" class="choice fas fa-hand-rock fa-7x"></i>
+                    <i id="paper" class="choice fas fa-hand-paper fa-7x"></i>
+                    <i id="scissors" class="choice fas fa-hand-scissors fa-7x"></i>
+                </div>
+            </div>
+            <div id='rightSideMain'>
+                <div id='versusDiv'>
+                    <div class="fas fa-hand-rock fa-7x" id='yourChoice'></div>
+                    <div id='versus'>
+                        <h3>
+                            <span style='color: red'>V</span>
+                            <span style='color: white'>E</span>
+                            <span style='color: blue'>R</span>
+                            <span style='color: red'>S</span>
+                            <span style='color: white'>U</span>
+                            <span style='color: blue'>S</span>
+                        </h3>
+                    </div>
+                    <div class="fas fa-hand-scissors fa-7x" id='computerChoice'></div>
+                 </div>
+                <div id='outcomeDiv'>
+                     <h2 id='winOrLose'>The results will be posted here!</h2>
+                     <h3 id='matchup'>Good luck!!</h3>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
     <script src="javascript.js"></script>
-    testing!
     
 </body>
 </html>

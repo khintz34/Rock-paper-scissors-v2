@@ -1,0 +1,168 @@
+* {
+    background-color: lightblue;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+   margin: auto;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   flex-basis: 100%;
+   text-align: center;
+}
+
+/* TOP DIV */
+
+#topDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#restartBtn {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+#restartBtn:hover {
+    cursor: pointer;
+}
+
+#scoreBoardDiv {
+    width: 100%;
+}
+
+#roundsPlayed {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+#scoresDiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.2rem;
+}
+
+#playerScore {
+    background-color: blue;
+    color: white;
+}
+
+#computerScore {
+    background-color: red;
+    color: white;
+}
+
+/* Main Area */
+
+#mainArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.playerChoice {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: gray;
+    width: 300px;
+}
+
+.choice {
+    cursor: pointer;
+}
+
+#rock,
+#paper,
+#scissors {
+    color: gray;
+}
+
+#rock:hover {
+    color: red;
+}
+
+#paper:hover {
+    color: white;
+}
+
+#scissors:hover {
+    color: blue;
+}
+
+#leftSideMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+#makeYourChoice {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#rightSideMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    flex: 1;
+}
+
+#versusDiv {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+#yourChoice {
+    color: gray;
+    width: 150px;
+    height: 150px;
+    
+}
+
+#computerChoice {
+    color: gray;
+    width: 150px;
+    height: 150px;
+}
+
+#versus {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    width: 100px;
+}
+
+#outcomeDiv {
+    margin-top: 40px;
+}
+
+#winOrLose {
+    margin-bottom: 20px;
+}
